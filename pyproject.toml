@@ -3,7 +3,14 @@ name = "djano-crm"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.14"
+classifiers = [ "Programming Language :: Python :: 3 :: Only" ]
 dependencies = [
-    "django>=6.0.2",
-    "pre-commit>=4.5.1",
+  "django>=6.0.2",
+  "django-googler>=0.0.20",
+  "pre-commit>=4.5.1",
+]
+
+[dependency-groups]
+dev = [
+  "virtualenv>=20.36.1",
 ]
